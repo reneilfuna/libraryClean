@@ -151,6 +151,8 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
 
+   overflow: hidden;
+
    /* Lengths */
    height: 50%;
    width: 50%;
@@ -158,6 +160,10 @@ body {
 
 #modalContent {
    display: grid;
+
+   min-height: 0; 
+   min-width: 0;
+
 
    height: 100%;
 
