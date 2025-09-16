@@ -206,19 +206,22 @@ body {
 
 .btnWrapper {
    display: flex;
+
+   align-items: center;
+   justify-content: space-around;
 }
 
 #close {
-   align-items: center;
+   justify-content: center;
 
-   width: 270px;
+   width: 180px;
    height: 60px;
    
    font-weight: 700;
    font-size: 20px;
    
-   color: #F9FAFB;
-   background-color: #FDB91A;
-   box-shadow: 0px 4px 10px lightgray;
+   color: black;
+   background-color: #A05B0B;;
+   box-shadow: 0px 4px 10px black;
    border-radius: 10px;
 }
