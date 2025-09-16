@@ -69,11 +69,18 @@ function placeholder() {
    console.log("i am a placeholder!");
 }
 
+function createBook(title, pages, author){
+   addBookToLibrary(title, pages, author, 0);
+}
+
 // Referencing close button
 const bookBtn = document.getElementById("addBook");
 const modal  = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const newBtn = document.getElementById("new");
+const title = document.getElementById("book_name");
+const author = document.getElementById("author");
+const pages = document.getElementById("pages");
 
 bookBtn.addEventListener("click", (event) => {
    modal.showModal()
@@ -83,7 +90,10 @@ closeBtn.addEventListener("click", (event) => {
    modal.close();
 })
 
-newBtn.addEventListener("click", placeholder);
+newBtn.addEventListener("click", (event) => {
+   createBook(title.value, author.value, pages.value)
+   showBooks();
+});
 
 showBooks();
 
