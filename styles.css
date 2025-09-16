@@ -66,6 +66,9 @@ body {
 
    margin: 20px;
    padding-inline: 5%;
+
+   min-width: 0%;
+   min-height: 0%;
    
    text-align: center;
 }
@@ -73,6 +76,11 @@ body {
 .aBook > div {
    background-color: #432919;
    color: #A05B0B;
+
+   min-width: 0%;
+   min-height: 0%;
+
+   overflow: hidden;
 }
 
 .author {
@@ -164,7 +172,6 @@ body {
    min-height: 0; 
    min-width: 0;
 
-
    height: 100%;
 
    grid-template-columns: 1fr;
@@ -184,7 +191,7 @@ body {
    flex-direction: column;
 
    flex-grow: 1;
-   
+
    justify-content: space-around;
    align-content: flex-start;
 
